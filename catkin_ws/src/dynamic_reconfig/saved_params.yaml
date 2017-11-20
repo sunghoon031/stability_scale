@@ -1,0 +1,49 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  dynamic_scale: 4.377999999999999
+  gain_param: 80.0
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      dynamic_scale: 4.377999999999999
+      gain_param: 80.0
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      joystick_scale: 0.999
+      left_and_right_distance: 3.0
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      state: true
+      type: ''
+      window_param: 3000.0
+      xy_d_exp_js: -1
+      xy_d_number_js: 2.0
+      xy_p_exp_js: 0
+      xy_p_number_js: 2.0
+      yaw_d_exp_js: 0
+      yaw_d_number_js: 0.0
+      yaw_p_exp_js: 0
+      yaw_p_number_js: 3.0
+      z_d_exp_js: 0
+      z_d_number_js: 0.0
+      z_p_exp_js: 0
+      z_p_number_js: 3.5
+    state: []
+  joystick_scale: 0.999
+  left_and_right_distance: 3.0
+  window_param: 3000.0
+  xy_d_exp_js: -1
+  xy_d_number_js: 2.0
+  xy_p_exp_js: 0
+  xy_p_number_js: 2.0
+  yaw_d_exp_js: 0
+  yaw_d_number_js: 0.0
+  yaw_p_exp_js: 0
+  yaw_p_number_js: 3.0
+  z_d_exp_js: 0
+  z_d_number_js: 0.0
+  z_p_exp_js: 0
+  z_p_number_js: 3.5
+state: []
