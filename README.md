@@ -28,7 +28,7 @@ catkin_make
 ````
 [3] Clone and build the ORB-SLAM2 from https://github.com/sunghoon031/ORB_SLAM2.git. Please follow the build instructions there
 
-### How to run:
+### - How to run:
 ##### 1. Specify the mode
 Take a look at the setting file `stability_scale/catkin_ws/src/tum_simulator/cvg_sim_gazebo/seong_param.yaml`
 
@@ -83,7 +83,7 @@ cd ~/stability_scale/catkin_ws && source devel/setup.bash
 rosrun ardrone_autonomy ardrone_driver _realtime_navdata:=False _navdata_demo:=0
 ````
 
-### How to use the joystick:
+##### 6. Using the joystick:
 - Take off: Button 3
 - Land: Button 4
 - Start/Stop the adaptive scale estimation: Button 7
