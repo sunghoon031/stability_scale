@@ -1,4 +1,4 @@
-# Stability-based Scale Estimation of Monocular SLAM for Autonomous Navigation
+# Stability-based Scale Estimation for Monocular SLAM
 
 ## 1. Supplementary materials for the paper
 [1] First, read `supplementary_materials/Supplementary_Material.pdf` for the full derivations ommited in the paper.
