@@ -692,11 +692,11 @@ void GazeboQuadrotorSimpleController::ScaleEstimation::ReadDynamicReconfigure(ro
         if (reconfigure_time > 3) // avoid reading too many times ! it slows everything down !
         {
             reconfigure_time = 0;
-            nh.getParam("/dynamic_tutorials/gain_param", gain);
-            nh.getParam("/dynamic_tutorials/window_param", config_time_window);
+            nh.getParam("/dynamic_reconfig/gain_param", gain);
+            nh.getParam("/dynamic_reconfig/window_param", config_time_window);
 
-            nh.getParam("/dynamic_tutorials/yaw_p_gain", config_yaw_pgain);
-            nh.getParam("/dynamic_tutorials/yaw_d_gain", config_yaw_dgain);
+            nh.getParam("/dynamic_reconfig/yaw_p_gain", config_yaw_pgain);
+            nh.getParam("/dynamic_reconfig/yaw_d_gain", config_yaw_dgain);
 
         }
 
