@@ -3,16 +3,16 @@ test_mode: 3
 # 2 = Full simulation with different scene distances (tum_simulator) [v]
 
 # 3 = Hovering using the stability-based adaptive control (joystick_simulator + rqt_reconfigure) [v]
-# 4 = Square Figure-flying using the stability-based adaptive control (joystick_simulator)
+# 4 = Straight line flying using the stability-based adaptive control (joystick_simulator)
 # 5 = Cube Figure-flying using the stability-based adaptive control (joystick_simulator)
 # 6 = Vertical Flight (joystick_simulator)
 # 7 = Horizontal Flight (joystick_simulator)
 
 # 8 = Hovering using the stability-based adaptive control (real drone + rqt_reconfigure)
-# 9 = Square Figure-flying using the stability-based adaptive control (real drone)
+# 9 = Straight line Figure-flying using the stability-based adaptive control (real drone)
 # 10 = Cube Figure-flying using the stability-based adaptive control (real drone)
-# 11 = Vertical Flight (joystick_simulator)
-# 12 = Horizontal Flight (joystick_simulator)
+# 11 = Vertical Flight (real drone)
+# 12 = Horizontal Flight (real drone)
 
 #----------------------------------------------------------------------------------------------------------------------------------------
 ###########################
