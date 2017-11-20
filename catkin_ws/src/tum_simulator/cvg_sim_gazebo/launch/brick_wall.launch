@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find cvg_sim_gazebo)/worlds/brick_wall.world"/>
+    <!--
+    <arg name="world_name" value="$(find cvg_sim_gazebo)/worlds/brick_wall_cabinet.world"/>
+    -->
+    <!--
+    <arg name="world_name" value="$(find cvg_sim_gazebo)/worlds/brick_wall_mud10.world"/>
+    -->
+    <!--
+    <arg name="world_name" value="$(find cvg_sim_gazebo)/worlds/brick_wall_mud6.world"/>
+    -->
+  </include>
+
+
+  <!-- Spawn simulated quadrotor uav -->
+  <include file="$(find cvg_sim_gazebo)/launch/spawn_quadrotor_pi.launch" >
+    <arg name="model" value="$(find cvg_sim_gazebo)/urdf/quadrotor_sensors.urdf.xacro"/> 
+  </include>
+  
+  <rosparam command="delete" ns="seong_ns" />
+  <rosparam command="load" file="$(find cvg_sim_gazebo)/seong_param.yaml" ns="seong_ns" />
+
+</launch>

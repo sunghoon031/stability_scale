@@ -1,0 +1,133 @@
+test_mode: 3
+# 1 = Hovering using GT (tum_simulator + rqt_reconfigure) [v]
+# 2 = Full simulation with different scene distances (tum_simulator) [v]
+
+# 3 = Hovering using the stability-based adaptive control (joystick_simulator + rqt_reconfigure) [v]
+# 4 = Square Figure-flying using the stability-based adaptive control (joystick_simulator)
+# 5 = Cube Figure-flying using the stability-based adaptive control (joystick_simulator)
+# 6 = Vertical Flight (joystick_simulator)
+# 7 = Horizontal Flight (joystick_simulator)
+
+# 8 = Hovering using the stability-based adaptive control (real drone + rqt_reconfigure)
+# 9 = Square Figure-flying using the stability-based adaptive control (real drone)
+# 10 = Cube Figure-flying using the stability-based adaptive control (real drone)
+# 11 = Vertical Flight (joystick_simulator)
+# 12 = Horizontal Flight (joystick_simulator)
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+###########################
+###  Ground-truth gains ###
+###  (DON'T CHANGE !!!) ###
+###########################
+yaw_pgain: 0.02
+yaw_igain: 0
+yaw_dgain: 0.04
+
+xy_pgain: 0.5 
+xy_igain: 0
+xy_dgain: 0
+
+z_pgain: 1
+z_dgain: 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+##############################
+###  GT-related parameters ###
+###  (DON'T CHANGE !!!)    ###
+##############################
+
+
+xyz_margin: 0.01    # Considered as being "reached" if dist to waypoint is less than this [m],
+hover_time: 2
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+
+x_wp_repeat: 1 #10
+
+scene_distance_init: 6  # Want a single fixed scene distance? --> Set both init & max parameters to the desired distance.
+scene_distance_max: 6
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+
+gain_init: 10
+gain_inc_factor: 0.05  #0.01 too small, 0.1 too big
+
+time_window: 1500 #2000             
+time_window_trunc_factor: 0.5    
+time_window_eval_factor:  2    
+
+detection_variable_thr: 1.5 #1
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+#################################
+###  Joystick-Simulator gains ###
+###  (DON'T CHANGE !!!)       ###
+#################################
+
+yaw_p_number_js: 3.0
+yaw_p_exp_js: 0
+yaw_d_number_js: 0.0
+yaw_d_exp_js: 0
+
+z_p_number_js: 3.5
+z_p_exp_js: 0
+z_d_number_js: 0.0
+z_d_exp_js: 0
+
+xy_p_number_js: 2.0
+xy_p_exp_js: 0
+xy_d_number_js: 2.0
+xy_d_exp_js: -1
+
+#--------------------------------------------------------
+
+xyz_margin_js: 0.05  
+hover_time_js: 2
+
+time_window_js: 70   #100
+detection_variable_thr_js: 0.15 #0.1
+gain_init_js: 5
+gain_inc_factor_js: 0.1
+
+alpha_js: 20 # 20 better, 10 good, 5 too small
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+####################
+## For Real Drone ##
+####################
+
+# Manual Control
+
+joystick_xy_scale: 0.2
+joystick_z_scale: 0.3
+joystick_yaw_scale: 1
+
+# Autopilot
+
+auto_yaw_max: 0.1       
+auto_yaw_p_gain: 2    
+auto_yaw_i_gain: 0.02#0.01
+auto_yaw_d_gain: 0     
+
+auto_z_max: 9999 # 1       
+auto_z_p_gain: 1 #0.8
+auto_z_i_gain: 0     
+auto_z_d_gain: 0      
+
+auto_xy_max: 0.2
+auto_xy_p_gain: 0.2
+auto_xy_i_gain: 0
+auto_xy_d_gain: 0.2
+
+
+height_for_scale: 1
+
+detection_variable_thr_auto: 0.08 #0.05 NL 
+gain_init_auto: 2 #NL      
+gain_inc_factor_auto: 0.15 
+
+
+alpha_rd: 3.5 #4 NL
+xyz_margin_rd: 0.1  
+
+
