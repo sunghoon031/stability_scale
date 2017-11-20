@@ -83,3 +83,13 @@ cd ~/stability_scale/catkin_ws && source devel/setup.bash
 rosrun ardrone_autonomy ardrone_driver _realtime_navdata:=False _navdata_demo:=0
 ````
 
+### How to use the joystick:
+- Take off: Button 3
+- Land: Button 4
+- Start/Stop the adaptive scale estimation: Button 7
+- Set the current position as the ground level: Button 8
+- Write the scale estimation results to a file: Button 9
+- Set the current position as the reference (for scalefree navigation): Button 10
+- Increase alpha parameter (only for vertical/horizontal waypoint flight): Button 11
+- Decrease alpha parameter (only for vertical/horizontal waypoint flight): Button 12
+
